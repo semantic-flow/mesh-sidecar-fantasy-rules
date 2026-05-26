@@ -7,13 +7,15 @@
 
 <examples/gunaar/ability-score/intelligence/_knop/_sources#extraction-source> a sflo:ExtractionSource ;
   sflo:targetArtifact <examples/gunaar> ;
-  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:targetHistoricalState <examples/gunaar/_history001/_s0001> ;
   sflo:hasResolutionObservation <examples/gunaar/ability-score/intelligence/_knop/_sources#extraction-source-observation-001> .
 
 <examples/gunaar/ability-score/intelligence/_knop/_sources#extraction-source-observation-001> a sflo:ArtifactResolutionObservation ;
   sflo:observedArtifactResolutionSpec [
     a sflo:ArtifactResolutionSpec ;
-    sflo:targetLocalRelativePath "../examples/gunaar.ttl"
+    sflo:targetHistoricalState <examples/gunaar/_history001/_s0001> ;
+    sflo:targetManifestation <examples/gunaar/_history001/_s0001/ttl> ;
+    sflo:targetLocatedFile <examples/gunaar/_history001/_s0001/ttl/gunaar.ttl>
   ] ;
   sflo:observedContentDigest "sha256:e32668363cbc7f0b7fdd27a7b54013b7f902a35755b4e3491117b5d1e6beb554" .
 
