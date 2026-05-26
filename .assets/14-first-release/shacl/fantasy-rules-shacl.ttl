@@ -11,7 +11,7 @@
     dcterms:description "A small SHACL graph for the Fantasy Rules sidecar fixture." ;
     owl:versionInfo "0.0.2" ;
     owl:versionIRI <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/shacl/releases/v0.0.2/ttl/fantasy-rules-shacl.ttl> ;
-    dcterms:hasVersion <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/shacl/releases/v0.0.2> ;
+    dcterms:hasVersion <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/shacl/releases/v0.0.2> .
 
 fant:CharacterShape
     a sh:NodeShape ;
