@@ -7,13 +7,15 @@
 
 <ontology/PlayerCharacter/_knop/_sources#extraction-source> a sflo:ExtractionSource ;
   sflo:targetArtifact <ontology> ;
-  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:targetHistoricalState <ontology/_history001/_s0001> ;
   sflo:hasResolutionObservation <ontology/PlayerCharacter/_knop/_sources#extraction-source-observation-001> .
 
 <ontology/PlayerCharacter/_knop/_sources#extraction-source-observation-001> a sflo:ArtifactResolutionObservation ;
   sflo:observedArtifactResolutionSpec [
     a sflo:ArtifactResolutionSpec ;
-    sflo:targetLocalRelativePath "../ontology/fantasy-rules-ontology.ttl"
+    sflo:targetHistoricalState <ontology/_history001/_s0001> ;
+    sflo:targetManifestation <ontology/_history001/_s0001/ttl> ;
+    sflo:targetLocatedFile <ontology/_history001/_s0001/ttl/fantasy-rules-ontology.ttl>
   ] ;
   sflo:observedContentDigest "sha256:59d700fcb8ae22181d131668df4ccf2cb58b70b37c3bcabea4b38fece15f3bb0" .
 
