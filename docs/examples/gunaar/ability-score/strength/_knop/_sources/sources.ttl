@@ -1,0 +1,20 @@
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<examples/gunaar/ability-score/strength/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <examples/gunaar/ability-score/strength/_knop/_sources/sources.ttl> ;
+  sflo:hasSourceBinding <examples/gunaar/ability-score/strength/_knop/_sources#extraction-source> .
+
+<examples/gunaar/ability-score/strength/_knop/_sources#extraction-source> a sflo:ExtractionSource ;
+  sflo:targetArtifact <examples/gunaar> ;
+  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:hasResolutionObservation <examples/gunaar/ability-score/strength/_knop/_sources#extraction-source-observation-001> .
+
+<examples/gunaar/ability-score/strength/_knop/_sources#extraction-source-observation-001> a sflo:ArtifactResolutionObservation ;
+  sflo:observedArtifactResolutionSpec [
+    a sflo:ArtifactResolutionSpec ;
+    sflo:targetLocalRelativePath "../examples/gunaar.ttl"
+  ] ;
+  sflo:observedContentDigest "sha256:e32668363cbc7f0b7fdd27a7b54013b7f902a35755b4e3491117b5d1e6beb554" .
+
+<examples/gunaar/ability-score/strength/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
