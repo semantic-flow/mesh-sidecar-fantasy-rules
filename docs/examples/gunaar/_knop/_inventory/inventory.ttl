@@ -1,0 +1,30 @@
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<examples/gunaar/_knop> a sflo:Knop ;
+  sflo:hasKnopMetadata <examples/gunaar/_knop/_meta> ;
+  sflo:hasKnopInventory <examples/gunaar/_knop/_inventory> ;
+  sflo:hasKnopSourceRegistry <examples/gunaar/_knop/_sources> ;
+  sflo:hasWorkingKnopInventoryFile <examples/gunaar/_knop/_inventory/inventory.ttl> ;
+  sflo:hasPayloadArtifact <examples/gunaar> .
+
+<examples/gunaar> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:workingLocalRelativePath "../examples/gunaar.ttl" .
+
+<examples/gunaar/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <examples/gunaar/_knop/_meta/meta.ttl> .
+
+<examples/gunaar/_knop/_inventory> a sflo:KnopInventory, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <examples/gunaar/_knop/_inventory/inventory.ttl> .
+
+
+<examples/gunaar/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <examples/gunaar/_knop/_sources/sources.ttl> .
+
+<examples/gunaar/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<examples/gunaar/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<examples/gunaar/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+
