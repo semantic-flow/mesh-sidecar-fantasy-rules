@@ -74,3 +74,10 @@
 
 <ontology/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+<ontology> sflo:hasResourcePage <ontology/index.html> .
+
+<ontology/_knop> sflo:hasResourcePage <ontology/_knop/index.html> .
+
+<ontology/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<ontology/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
