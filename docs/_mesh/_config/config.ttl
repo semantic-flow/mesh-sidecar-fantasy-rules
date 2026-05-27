@@ -3,21 +3,18 @@
 <> a sfcfg:MeshConfig ;
   sfcfg:workspaceRootRelativeToMeshRoot "../" ;
   sfcfg:hasPublicationProfile <https://semantic-flow.github.io/sflo/config/publicationProfile_githubPages> ;
-  sfcfg:hasLocalPathAccessRule [
-    a sfcfg:LocalPathAccessRule ;
-    sfcfg:hasLocalPathBase <https://semantic-flow.github.io/sflo/config/localPathBase_meshRoot> ;
-    sfcfg:pathPrefix "../ontology/" ;
-    sfcfg:hasLocalPathLocatorKind <https://semantic-flow.github.io/sflo/config/localPathLocatorKind_workingLocalRelativePath>
+  sfcfg:hasMeshWorkspacePathRule [
+    a sfcfg:MeshWorkspacePathRule ;
+    sfcfg:workspacePathPrefix "../ontology/" ;
+    sfcfg:appliesToLocalPathLocatorKind <https://semantic-flow.github.io/sflo/config/localPathLocatorKind_workingLocalRelativePath>
   ] ;
-  sfcfg:hasLocalPathAccessRule [
-    a sfcfg:LocalPathAccessRule ;
-    sfcfg:hasLocalPathBase <https://semantic-flow.github.io/sflo/config/localPathBase_meshRoot> ;
-    sfcfg:pathPrefix "../shacl/" ;
-    sfcfg:hasLocalPathLocatorKind <https://semantic-flow.github.io/sflo/config/localPathLocatorKind_workingLocalRelativePath>
+  sfcfg:hasMeshWorkspacePathRule [
+    a sfcfg:MeshWorkspacePathRule ;
+    sfcfg:workspacePathPrefix "../shacl/" ;
+    sfcfg:appliesToLocalPathLocatorKind <https://semantic-flow.github.io/sflo/config/localPathLocatorKind_workingLocalRelativePath>
   ] ;
-  sfcfg:hasLocalPathAccessRule [
-    a sfcfg:LocalPathAccessRule ;
-    sfcfg:hasLocalPathBase <https://semantic-flow.github.io/sflo/config/localPathBase_meshRoot> ;
-    sfcfg:pathPrefix "../examples/" ;
-    sfcfg:hasLocalPathLocatorKind <https://semantic-flow.github.io/sflo/config/localPathLocatorKind_workingLocalRelativePath>
+  sfcfg:hasMeshWorkspacePathRule [
+    a sfcfg:MeshWorkspacePathRule ;
+    sfcfg:workspacePathPrefix "../examples/" ;
+    sfcfg:appliesToLocalPathLocatorKind <https://semantic-flow.github.io/sflo/config/localPathLocatorKind_workingLocalRelativePath>
   ] .
