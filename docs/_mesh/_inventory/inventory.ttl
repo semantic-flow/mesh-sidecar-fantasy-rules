@@ -261,3 +261,16 @@
 <examples/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <examples/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<_mesh> sflo:hasKnop <examples/gunaar/_knop> .
+
+<examples/gunaar> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:workingLocalRelativePath "../examples/gunaar.ttl" .
+
+<examples/gunaar/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <examples/gunaar/_knop/_inventory/inventory.ttl> .
+
+<examples/gunaar/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
