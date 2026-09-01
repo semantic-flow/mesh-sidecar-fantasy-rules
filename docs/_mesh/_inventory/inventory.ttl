@@ -66,3 +66,16 @@
 <_mesh/_config/_history001/_s0001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_mesh/_config/_history001/_s0001/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<_mesh> sflo:hasKnop <ontology/_knop> .
+
+<ontology> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:workingLocalRelativePath "../ontology/fantasy-rules-ontology.ttl" .
+
+<ontology/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <ontology/_knop/_inventory/inventory.ttl> .
+
+<ontology/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
