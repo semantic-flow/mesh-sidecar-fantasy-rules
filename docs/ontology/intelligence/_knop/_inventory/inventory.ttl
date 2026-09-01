@@ -32,3 +32,4 @@
 <ontology/intelligence/_knop/_meta/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/intelligence/_knop/_inventory/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+

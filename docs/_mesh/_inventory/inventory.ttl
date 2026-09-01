@@ -7,15 +7,7 @@
   sflo:meshBase "https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/"^^xsd:anyURI ;
   sflo:hasMeshMetadata <_mesh/_meta> ;
   sflo:hasMeshInventory <_mesh/_inventory> ;
-  sflo:hasKnop <examples/_knop> ;
-  sflo:hasKnop <ontology/_knop> ;
-  sflo:hasKnop <shacl/_knop> ;
-  sflo:hasKnop <ontology/AbilityScore/_knop> ;
-  sflo:hasKnop <ontology/Alignment/_knop> ;
-  sflo:hasKnop <ontology/Character/_knop> ;
-  sflo:hasKnop <ontology/PlayerCharacter/_knop> ;
-  sflo:hasKnop <ontology/CharacterShape/_knop> ;
-  sflo:hasKnop <_knop> ;
+  sfcfg:hasConfig <_mesh/_config> ;
   sflo:hasResourcePage <_mesh/index.html> .
 
 <_mesh/index.html> a sflo:ResourcePage, sflo:LocatedFile .
@@ -35,15 +27,11 @@
 <_mesh/_config> a sfcfg:MeshConfig, sflo:DigitalArtifact, sflo:RdfDocument ;
   sflo:hasWorkingLocatedFile <_mesh/_config/config.ttl> ;
   sflo:hasResourcePage <_mesh/_config/index.html> ;
-  sflo:hasArtifactHistory <_mesh/_config/_history001> ;
-  sflo:currentArtifactHistory <_mesh/_config/_history001> ;
-  sflo:nextHistoryOrdinal "2"^^xsd:nonNegativeInteger .
+  sflo:hasArtifactHistory <_mesh/_config/_history001> .
 
 <_mesh/_config/_history001> a sflo:ArtifactHistory ;
   sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
   sflo:hasHistoricalState <_mesh/_config/_history001/_s0001> ;
-  sflo:latestHistoricalState <_mesh/_config/_history001/_s0001> ;
-  sflo:nextStateOrdinal "2"^^xsd:nonNegativeInteger ;
   sflo:hasResourcePage <_mesh/_config/_history001/index.html> .
 
 <_mesh/_config/_history001/_s0001> a sflo:HistoricalState ;
@@ -68,13 +56,12 @@
 
 <_mesh/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
-<examples/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
-<_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
 <_mesh/_config/config.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <_mesh/_config/_history001/_s0001/ttl/config.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/_knop> .
 
@@ -86,6 +73,9 @@
 
 <ontology/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology> sflo:hasResourcePage <ontology/index.html> .
 
 <ontology/_knop> sflo:hasResourcePage <ontology/_knop/index.html> .
@@ -93,6 +83,9 @@
 <ontology/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <shacl/_knop> .
 
@@ -104,6 +97,9 @@
 
 <shacl/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <shacl> sflo:hasResourcePage <shacl/index.html> .
 
 <shacl/_knop> sflo:hasResourcePage <shacl/_knop/index.html> .
@@ -112,12 +108,18 @@
 
 <shacl/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/AbilityScore/_knop> .
 
 <ontology/AbilityScore/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/AbilityScore/_knop/_inventory/inventory.ttl> .
 
 <ontology/AbilityScore/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/Alignment/_knop> .
 
@@ -126,12 +128,18 @@
 
 <ontology/Alignment/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/Character/_knop> .
 
 <ontology/Character/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/Character/_knop/_inventory/inventory.ttl> .
 
 <ontology/Character/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/PlayerCharacter/_knop> .
 
@@ -140,18 +148,18 @@
 
 <ontology/PlayerCharacter/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/CharacterShape/_knop> .
 
 <ontology/CharacterShape/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/CharacterShape/_knop/_inventory/inventory.ttl> .
 
-<_knop> a sflo:Knop ;
-  sflo:hasWorkingKnopInventoryFile <_knop/_inventory/inventory.ttl> .
-
-<examples/_knop> a sflo:Knop ;
-  sflo:hasWorkingKnopInventoryFile <examples/_knop/_inventory/inventory.ttl> .
-
 <ontology/CharacterShape/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/AbilityScore> sflo:hasResourcePage <ontology/AbilityScore/index.html> .
 
@@ -161,6 +169,9 @@
 
 <ontology/AbilityScore/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/Alignment> sflo:hasResourcePage <ontology/Alignment/index.html> .
 
 <ontology/Alignment/_knop> sflo:hasResourcePage <ontology/Alignment/_knop/index.html> .
@@ -168,6 +179,9 @@
 <ontology/Alignment/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/Alignment/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/Character> sflo:hasResourcePage <ontology/Character/index.html> .
 
@@ -177,6 +191,9 @@
 
 <ontology/Character/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/CharacterShape> sflo:hasResourcePage <ontology/CharacterShape/index.html> .
 
 <ontology/CharacterShape/_knop> sflo:hasResourcePage <ontology/CharacterShape/_knop/index.html> .
@@ -184,6 +201,9 @@
 <ontology/CharacterShape/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/CharacterShape/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/PlayerCharacter> sflo:hasResourcePage <ontology/PlayerCharacter/index.html> .
 
@@ -193,6 +213,29 @@
 
 <ontology/PlayerCharacter/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<_mesh> sflo:hasKnop <_knop> .
+
+<_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <_knop/_inventory/inventory.ttl> .
+
+<_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<_mesh> sflo:hasKnop <examples/_knop> .
+
+<examples/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <examples/_knop/_inventory/inventory.ttl> .
+
+<examples/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <> sflo:hasResourcePage <index.html> .
 
 <_knop> sflo:hasResourcePage <_knop/index.html> .
@@ -201,6 +244,9 @@
 
 <_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <examples> sflo:hasResourcePage <examples/index.html> .
 
 <examples/_knop> sflo:hasResourcePage <examples/_knop/index.html> .
@@ -208,6 +254,9 @@
 <examples/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <examples/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <examples/gunaar/_knop> .
 
@@ -219,6 +268,9 @@
 
 <examples/gunaar/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <examples/gunaar> sflo:hasResourcePage <examples/gunaar/index.html> .
 
 <examples/gunaar/_knop> sflo:hasResourcePage <examples/gunaar/_knop/index.html> .
@@ -227,12 +279,18 @@
 
 <examples/gunaar/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/Ability/_knop> .
 
 <ontology/Ability/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/Ability/_knop/_inventory/inventory.ttl> .
 
 <ontology/Ability/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/Alignment/chaoticEvil/_knop> .
 
@@ -241,12 +299,18 @@
 
 <ontology/Alignment/chaoticEvil/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/Alignment/chaoticGood/_knop> .
 
 <ontology/Alignment/chaoticGood/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/Alignment/chaoticGood/_knop/_inventory/inventory.ttl> .
 
 <ontology/Alignment/chaoticGood/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/Alignment/chaoticNeutral/_knop> .
 
@@ -255,12 +319,18 @@
 
 <ontology/Alignment/chaoticNeutral/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/Alignment/lawfulEvil/_knop> .
 
 <ontology/Alignment/lawfulEvil/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/Alignment/lawfulEvil/_knop/_inventory/inventory.ttl> .
 
 <ontology/Alignment/lawfulEvil/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/Alignment/lawfulGood/_knop> .
 
@@ -269,12 +339,18 @@
 
 <ontology/Alignment/lawfulGood/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/Alignment/lawfulNeutral/_knop> .
 
 <ontology/Alignment/lawfulNeutral/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/Alignment/lawfulNeutral/_knop/_inventory/inventory.ttl> .
 
 <ontology/Alignment/lawfulNeutral/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/Alignment/neutral/_knop> .
 
@@ -283,12 +359,18 @@
 
 <ontology/Alignment/neutral/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/Alignment/neutralEvil/_knop> .
 
 <ontology/Alignment/neutralEvil/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/Alignment/neutralEvil/_knop/_inventory/inventory.ttl> .
 
 <ontology/Alignment/neutralEvil/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/Alignment/neutralGood/_knop> .
 
@@ -297,12 +379,18 @@
 
 <ontology/Alignment/neutralGood/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/Alignment/unaligned/_knop> .
 
 <ontology/Alignment/unaligned/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/Alignment/unaligned/_knop/_inventory/inventory.ttl> .
 
 <ontology/Alignment/unaligned/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/AlignmentHistory/_knop> .
 
@@ -311,12 +399,18 @@
 
 <ontology/AlignmentHistory/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/alignmentValue/_knop> .
 
 <ontology/alignmentValue/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/alignmentValue/_knop/_inventory/inventory.ttl> .
 
 <ontology/alignmentValue/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/barbarian/_knop> .
 
@@ -325,12 +419,18 @@
 
 <ontology/barbarian/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/bard/_knop> .
 
 <ontology/bard/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/bard/_knop/_inventory/inventory.ttl> .
 
 <ontology/bard/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/character/_knop> .
 
@@ -339,12 +439,18 @@
 
 <ontology/character/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/CharacterClass/_knop> .
 
 <ontology/CharacterClass/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/CharacterClass/_knop/_inventory/inventory.ttl> .
 
 <ontology/CharacterClass/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/charisma/_knop> .
 
@@ -353,12 +459,18 @@
 
 <ontology/charisma/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/cleric/_knop> .
 
 <ontology/cleric/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/cleric/_knop/_inventory/inventory.ttl> .
 
 <ontology/cleric/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/constitution/_knop> .
 
@@ -367,12 +479,18 @@
 
 <ontology/constitution/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/dexterity/_knop> .
 
 <ontology/dexterity/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/dexterity/_knop/_inventory/inventory.ttl> .
 
 <ontology/dexterity/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/druid/_knop> .
 
@@ -381,12 +499,18 @@
 
 <ontology/druid/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/effectiveDateTime/_knop> .
 
 <ontology/effectiveDateTime/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/effectiveDateTime/_knop/_inventory/inventory.ttl> .
 
 <ontology/effectiveDateTime/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/fighter/_knop> .
 
@@ -395,12 +519,18 @@
 
 <ontology/fighter/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/forAbility/_knop> .
 
 <ontology/forAbility/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/forAbility/_knop/_inventory/inventory.ttl> .
 
 <ontology/forAbility/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/hasAbilityScore/_knop> .
 
@@ -409,12 +539,18 @@
 
 <ontology/hasAbilityScore/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/hasAlignment/_knop> .
 
 <ontology/hasAlignment/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/hasAlignment/_knop/_inventory/inventory.ttl> .
 
 <ontology/hasAlignment/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/hasCharacterClass/_knop> .
 
@@ -423,12 +559,18 @@
 
 <ontology/hasCharacterClass/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/intelligence/_knop> .
 
 <ontology/intelligence/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/intelligence/_knop/_inventory/inventory.ttl> .
 
 <ontology/intelligence/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/level/_knop> .
 
@@ -437,12 +579,18 @@
 
 <ontology/level/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/monk/_knop> .
 
 <ontology/monk/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/monk/_knop/_inventory/inventory.ttl> .
 
 <ontology/monk/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/paladin/_knop> .
 
@@ -451,12 +599,18 @@
 
 <ontology/paladin/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/primaryAbility/_knop> .
 
 <ontology/primaryAbility/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/primaryAbility/_knop/_inventory/inventory.ttl> .
 
 <ontology/primaryAbility/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/ranger/_knop> .
 
@@ -465,12 +619,18 @@
 
 <ontology/ranger/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/rogue/_knop> .
 
 <ontology/rogue/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/rogue/_knop/_inventory/inventory.ttl> .
 
 <ontology/rogue/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/scoreValue/_knop> .
 
@@ -479,12 +639,18 @@
 
 <ontology/scoreValue/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/sorcerer/_knop> .
 
 <ontology/sorcerer/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/sorcerer/_knop/_inventory/inventory.ttl> .
 
 <ontology/sorcerer/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/strength/_knop> .
 
@@ -493,12 +659,18 @@
 
 <ontology/strength/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/warlock/_knop> .
 
 <ontology/warlock/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/warlock/_knop/_inventory/inventory.ttl> .
 
 <ontology/warlock/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/wisdom/_knop> .
 
@@ -507,12 +679,18 @@
 
 <ontology/wisdom/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/wizard/_knop> .
 
 <ontology/wizard/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/wizard/_knop/_inventory/inventory.ttl> .
 
 <ontology/wizard/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/AbilityScoreShape/_knop> .
 
@@ -521,12 +699,18 @@
 
 <ontology/AbilityScoreShape/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/BarbarianPrimaryAbilityChoice/_knop> .
 
 <ontology/BarbarianPrimaryAbilityChoice/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/BarbarianPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> .
 
 <ontology/BarbarianPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/BardPrimaryAbilityChoice/_knop> .
 
@@ -535,12 +719,18 @@
 
 <ontology/BardPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/CharacterPrimaryAbilityByClassShape/_knop> .
 
 <ontology/CharacterPrimaryAbilityByClassShape/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/CharacterPrimaryAbilityByClassShape/_knop/_inventory/inventory.ttl> .
 
 <ontology/CharacterPrimaryAbilityByClassShape/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/ClericPrimaryAbilityChoice/_knop> .
 
@@ -549,12 +739,18 @@
 
 <ontology/ClericPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/DruidPrimaryAbilityChoice/_knop> .
 
 <ontology/DruidPrimaryAbilityChoice/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/DruidPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> .
 
 <ontology/DruidPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/FighterPrimaryAbilityChoice/_knop> .
 
@@ -563,12 +759,18 @@
 
 <ontology/FighterPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/MonkPrimaryAbilityChoice/_knop> .
 
 <ontology/MonkPrimaryAbilityChoice/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/MonkPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> .
 
 <ontology/MonkPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/PaladinPrimaryAbilityChoice/_knop> .
 
@@ -577,12 +779,18 @@
 
 <ontology/PaladinPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/RangerPrimaryAbilityChoice/_knop> .
 
 <ontology/RangerPrimaryAbilityChoice/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/RangerPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> .
 
 <ontology/RangerPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/RoguePrimaryAbilityChoice/_knop> .
 
@@ -591,12 +799,18 @@
 
 <ontology/RoguePrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/SorcererPrimaryAbilityChoice/_knop> .
 
 <ontology/SorcererPrimaryAbilityChoice/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/SorcererPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> .
 
 <ontology/SorcererPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <ontology/WarlockPrimaryAbilityChoice/_knop> .
 
@@ -605,12 +819,18 @@
 
 <ontology/WarlockPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <ontology/WizardPrimaryAbilityChoice/_knop> .
 
 <ontology/WizardPrimaryAbilityChoice/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <ontology/WizardPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> .
 
 <ontology/WizardPrimaryAbilityChoice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <examples/gunaar/ability-score/charisma/_knop> .
 
@@ -619,12 +839,18 @@
 
 <examples/gunaar/ability-score/charisma/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <examples/gunaar/ability-score/constitution/_knop> .
 
 <examples/gunaar/ability-score/constitution/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <examples/gunaar/ability-score/constitution/_knop/_inventory/inventory.ttl> .
 
 <examples/gunaar/ability-score/constitution/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <examples/gunaar/ability-score/dexterity/_knop> .
 
@@ -633,12 +859,18 @@
 
 <examples/gunaar/ability-score/dexterity/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <examples/gunaar/ability-score/intelligence/_knop> .
 
 <examples/gunaar/ability-score/intelligence/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <examples/gunaar/ability-score/intelligence/_knop/_inventory/inventory.ttl> .
 
 <examples/gunaar/ability-score/intelligence/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <_mesh> sflo:hasKnop <examples/gunaar/ability-score/strength/_knop> .
 
@@ -647,12 +879,18 @@
 
 <examples/gunaar/ability-score/strength/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <_mesh> sflo:hasKnop <examples/gunaar/ability-score/wisdom/_knop> .
 
 <examples/gunaar/ability-score/wisdom/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <examples/gunaar/ability-score/wisdom/_knop/_inventory/inventory.ttl> .
 
 <examples/gunaar/ability-score/wisdom/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <examples/gunaar/ability-score/charisma> sflo:hasResourcePage <examples/gunaar/ability-score/charisma/index.html> .
 
@@ -662,6 +900,9 @@
 
 <examples/gunaar/ability-score/charisma/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <examples/gunaar/ability-score/constitution> sflo:hasResourcePage <examples/gunaar/ability-score/constitution/index.html> .
 
 <examples/gunaar/ability-score/constitution/_knop> sflo:hasResourcePage <examples/gunaar/ability-score/constitution/_knop/index.html> .
@@ -669,6 +910,9 @@
 <examples/gunaar/ability-score/constitution/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <examples/gunaar/ability-score/constitution/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <examples/gunaar/ability-score/dexterity> sflo:hasResourcePage <examples/gunaar/ability-score/dexterity/index.html> .
 
@@ -678,6 +922,9 @@
 
 <examples/gunaar/ability-score/dexterity/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <examples/gunaar/ability-score/intelligence> sflo:hasResourcePage <examples/gunaar/ability-score/intelligence/index.html> .
 
 <examples/gunaar/ability-score/intelligence/_knop> sflo:hasResourcePage <examples/gunaar/ability-score/intelligence/_knop/index.html> .
@@ -685,6 +932,9 @@
 <examples/gunaar/ability-score/intelligence/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <examples/gunaar/ability-score/intelligence/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <examples/gunaar/ability-score/strength> sflo:hasResourcePage <examples/gunaar/ability-score/strength/index.html> .
 
@@ -694,6 +944,9 @@
 
 <examples/gunaar/ability-score/strength/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <examples/gunaar/ability-score/wisdom> sflo:hasResourcePage <examples/gunaar/ability-score/wisdom/index.html> .
 
 <examples/gunaar/ability-score/wisdom/_knop> sflo:hasResourcePage <examples/gunaar/ability-score/wisdom/_knop/index.html> .
@@ -701,6 +954,9 @@
 <examples/gunaar/ability-score/wisdom/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <examples/gunaar/ability-score/wisdom/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/Ability> sflo:hasResourcePage <ontology/Ability/index.html> .
 
@@ -710,6 +966,9 @@
 
 <ontology/Ability/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/AbilityScoreShape> sflo:hasResourcePage <ontology/AbilityScoreShape/index.html> .
 
 <ontology/AbilityScoreShape/_knop> sflo:hasResourcePage <ontology/AbilityScoreShape/_knop/index.html> .
@@ -717,6 +976,9 @@
 <ontology/AbilityScoreShape/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/AbilityScoreShape/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/Alignment/chaoticEvil> sflo:hasResourcePage <ontology/Alignment/chaoticEvil/index.html> .
 
@@ -726,6 +988,9 @@
 
 <ontology/Alignment/chaoticEvil/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/Alignment/chaoticGood> sflo:hasResourcePage <ontology/Alignment/chaoticGood/index.html> .
 
 <ontology/Alignment/chaoticGood/_knop> sflo:hasResourcePage <ontology/Alignment/chaoticGood/_knop/index.html> .
@@ -733,6 +998,9 @@
 <ontology/Alignment/chaoticGood/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/Alignment/chaoticGood/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/Alignment/chaoticNeutral> sflo:hasResourcePage <ontology/Alignment/chaoticNeutral/index.html> .
 
@@ -742,6 +1010,9 @@
 
 <ontology/Alignment/chaoticNeutral/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/Alignment/lawfulEvil> sflo:hasResourcePage <ontology/Alignment/lawfulEvil/index.html> .
 
 <ontology/Alignment/lawfulEvil/_knop> sflo:hasResourcePage <ontology/Alignment/lawfulEvil/_knop/index.html> .
@@ -749,6 +1020,9 @@
 <ontology/Alignment/lawfulEvil/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/Alignment/lawfulEvil/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/Alignment/lawfulGood> sflo:hasResourcePage <ontology/Alignment/lawfulGood/index.html> .
 
@@ -758,6 +1032,9 @@
 
 <ontology/Alignment/lawfulGood/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/Alignment/lawfulNeutral> sflo:hasResourcePage <ontology/Alignment/lawfulNeutral/index.html> .
 
 <ontology/Alignment/lawfulNeutral/_knop> sflo:hasResourcePage <ontology/Alignment/lawfulNeutral/_knop/index.html> .
@@ -765,6 +1042,9 @@
 <ontology/Alignment/lawfulNeutral/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/Alignment/lawfulNeutral/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/Alignment/neutral> sflo:hasResourcePage <ontology/Alignment/neutral/index.html> .
 
@@ -774,6 +1054,9 @@
 
 <ontology/Alignment/neutral/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/Alignment/neutralEvil> sflo:hasResourcePage <ontology/Alignment/neutralEvil/index.html> .
 
 <ontology/Alignment/neutralEvil/_knop> sflo:hasResourcePage <ontology/Alignment/neutralEvil/_knop/index.html> .
@@ -781,6 +1064,9 @@
 <ontology/Alignment/neutralEvil/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/Alignment/neutralEvil/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/Alignment/neutralGood> sflo:hasResourcePage <ontology/Alignment/neutralGood/index.html> .
 
@@ -790,6 +1076,9 @@
 
 <ontology/Alignment/neutralGood/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/Alignment/unaligned> sflo:hasResourcePage <ontology/Alignment/unaligned/index.html> .
 
 <ontology/Alignment/unaligned/_knop> sflo:hasResourcePage <ontology/Alignment/unaligned/_knop/index.html> .
@@ -797,6 +1086,9 @@
 <ontology/Alignment/unaligned/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/Alignment/unaligned/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/AlignmentHistory> sflo:hasResourcePage <ontology/AlignmentHistory/index.html> .
 
@@ -806,6 +1098,9 @@
 
 <ontology/AlignmentHistory/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/alignmentValue> sflo:hasResourcePage <ontology/alignmentValue/index.html> .
 
 <ontology/alignmentValue/_knop> sflo:hasResourcePage <ontology/alignmentValue/_knop/index.html> .
@@ -813,6 +1108,9 @@
 <ontology/alignmentValue/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/alignmentValue/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/barbarian> sflo:hasResourcePage <ontology/barbarian/index.html> .
 
@@ -822,6 +1120,9 @@
 
 <ontology/barbarian/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/BarbarianPrimaryAbilityChoice> sflo:hasResourcePage <ontology/BarbarianPrimaryAbilityChoice/index.html> .
 
 <ontology/BarbarianPrimaryAbilityChoice/_knop> sflo:hasResourcePage <ontology/BarbarianPrimaryAbilityChoice/_knop/index.html> .
@@ -829,6 +1130,9 @@
 <ontology/BarbarianPrimaryAbilityChoice/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/BarbarianPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/bard> sflo:hasResourcePage <ontology/bard/index.html> .
 
@@ -838,6 +1142,9 @@
 
 <ontology/bard/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/BardPrimaryAbilityChoice> sflo:hasResourcePage <ontology/BardPrimaryAbilityChoice/index.html> .
 
 <ontology/BardPrimaryAbilityChoice/_knop> sflo:hasResourcePage <ontology/BardPrimaryAbilityChoice/_knop/index.html> .
@@ -845,6 +1152,9 @@
 <ontology/BardPrimaryAbilityChoice/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/BardPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/character> sflo:hasResourcePage <ontology/character/index.html> .
 
@@ -854,6 +1164,9 @@
 
 <ontology/character/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/CharacterClass> sflo:hasResourcePage <ontology/CharacterClass/index.html> .
 
 <ontology/CharacterClass/_knop> sflo:hasResourcePage <ontology/CharacterClass/_knop/index.html> .
@@ -861,6 +1174,9 @@
 <ontology/CharacterClass/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/CharacterClass/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/CharacterPrimaryAbilityByClassShape> sflo:hasResourcePage <ontology/CharacterPrimaryAbilityByClassShape/index.html> .
 
@@ -870,6 +1186,9 @@
 
 <ontology/CharacterPrimaryAbilityByClassShape/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/charisma> sflo:hasResourcePage <ontology/charisma/index.html> .
 
 <ontology/charisma/_knop> sflo:hasResourcePage <ontology/charisma/_knop/index.html> .
@@ -877,6 +1196,9 @@
 <ontology/charisma/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/charisma/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/cleric> sflo:hasResourcePage <ontology/cleric/index.html> .
 
@@ -886,6 +1208,9 @@
 
 <ontology/cleric/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/ClericPrimaryAbilityChoice> sflo:hasResourcePage <ontology/ClericPrimaryAbilityChoice/index.html> .
 
 <ontology/ClericPrimaryAbilityChoice/_knop> sflo:hasResourcePage <ontology/ClericPrimaryAbilityChoice/_knop/index.html> .
@@ -893,6 +1218,9 @@
 <ontology/ClericPrimaryAbilityChoice/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/ClericPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/constitution> sflo:hasResourcePage <ontology/constitution/index.html> .
 
@@ -902,6 +1230,9 @@
 
 <ontology/constitution/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/dexterity> sflo:hasResourcePage <ontology/dexterity/index.html> .
 
 <ontology/dexterity/_knop> sflo:hasResourcePage <ontology/dexterity/_knop/index.html> .
@@ -909,6 +1240,9 @@
 <ontology/dexterity/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/dexterity/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/druid> sflo:hasResourcePage <ontology/druid/index.html> .
 
@@ -918,6 +1252,9 @@
 
 <ontology/druid/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/DruidPrimaryAbilityChoice> sflo:hasResourcePage <ontology/DruidPrimaryAbilityChoice/index.html> .
 
 <ontology/DruidPrimaryAbilityChoice/_knop> sflo:hasResourcePage <ontology/DruidPrimaryAbilityChoice/_knop/index.html> .
@@ -925,6 +1262,9 @@
 <ontology/DruidPrimaryAbilityChoice/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/DruidPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/effectiveDateTime> sflo:hasResourcePage <ontology/effectiveDateTime/index.html> .
 
@@ -934,6 +1274,9 @@
 
 <ontology/effectiveDateTime/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/fighter> sflo:hasResourcePage <ontology/fighter/index.html> .
 
 <ontology/fighter/_knop> sflo:hasResourcePage <ontology/fighter/_knop/index.html> .
@@ -941,6 +1284,9 @@
 <ontology/fighter/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/fighter/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/FighterPrimaryAbilityChoice> sflo:hasResourcePage <ontology/FighterPrimaryAbilityChoice/index.html> .
 
@@ -950,6 +1296,9 @@
 
 <ontology/FighterPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/forAbility> sflo:hasResourcePage <ontology/forAbility/index.html> .
 
 <ontology/forAbility/_knop> sflo:hasResourcePage <ontology/forAbility/_knop/index.html> .
@@ -957,6 +1306,9 @@
 <ontology/forAbility/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/forAbility/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/hasAbilityScore> sflo:hasResourcePage <ontology/hasAbilityScore/index.html> .
 
@@ -966,6 +1318,9 @@
 
 <ontology/hasAbilityScore/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/hasAlignment> sflo:hasResourcePage <ontology/hasAlignment/index.html> .
 
 <ontology/hasAlignment/_knop> sflo:hasResourcePage <ontology/hasAlignment/_knop/index.html> .
@@ -973,6 +1328,9 @@
 <ontology/hasAlignment/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/hasAlignment/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/hasCharacterClass> sflo:hasResourcePage <ontology/hasCharacterClass/index.html> .
 
@@ -982,6 +1340,9 @@
 
 <ontology/hasCharacterClass/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/intelligence> sflo:hasResourcePage <ontology/intelligence/index.html> .
 
 <ontology/intelligence/_knop> sflo:hasResourcePage <ontology/intelligence/_knop/index.html> .
@@ -989,6 +1350,9 @@
 <ontology/intelligence/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/intelligence/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/level> sflo:hasResourcePage <ontology/level/index.html> .
 
@@ -998,6 +1362,9 @@
 
 <ontology/level/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/monk> sflo:hasResourcePage <ontology/monk/index.html> .
 
 <ontology/monk/_knop> sflo:hasResourcePage <ontology/monk/_knop/index.html> .
@@ -1005,6 +1372,9 @@
 <ontology/monk/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/monk/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/MonkPrimaryAbilityChoice> sflo:hasResourcePage <ontology/MonkPrimaryAbilityChoice/index.html> .
 
@@ -1014,6 +1384,9 @@
 
 <ontology/MonkPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/paladin> sflo:hasResourcePage <ontology/paladin/index.html> .
 
 <ontology/paladin/_knop> sflo:hasResourcePage <ontology/paladin/_knop/index.html> .
@@ -1021,6 +1394,9 @@
 <ontology/paladin/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/paladin/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/PaladinPrimaryAbilityChoice> sflo:hasResourcePage <ontology/PaladinPrimaryAbilityChoice/index.html> .
 
@@ -1030,6 +1406,9 @@
 
 <ontology/PaladinPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/primaryAbility> sflo:hasResourcePage <ontology/primaryAbility/index.html> .
 
 <ontology/primaryAbility/_knop> sflo:hasResourcePage <ontology/primaryAbility/_knop/index.html> .
@@ -1037,6 +1416,9 @@
 <ontology/primaryAbility/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/primaryAbility/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/ranger> sflo:hasResourcePage <ontology/ranger/index.html> .
 
@@ -1046,6 +1428,9 @@
 
 <ontology/ranger/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/RangerPrimaryAbilityChoice> sflo:hasResourcePage <ontology/RangerPrimaryAbilityChoice/index.html> .
 
 <ontology/RangerPrimaryAbilityChoice/_knop> sflo:hasResourcePage <ontology/RangerPrimaryAbilityChoice/_knop/index.html> .
@@ -1053,6 +1438,9 @@
 <ontology/RangerPrimaryAbilityChoice/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/RangerPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/rogue> sflo:hasResourcePage <ontology/rogue/index.html> .
 
@@ -1062,6 +1450,9 @@
 
 <ontology/rogue/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/RoguePrimaryAbilityChoice> sflo:hasResourcePage <ontology/RoguePrimaryAbilityChoice/index.html> .
 
 <ontology/RoguePrimaryAbilityChoice/_knop> sflo:hasResourcePage <ontology/RoguePrimaryAbilityChoice/_knop/index.html> .
@@ -1069,6 +1460,9 @@
 <ontology/RoguePrimaryAbilityChoice/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/RoguePrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/scoreValue> sflo:hasResourcePage <ontology/scoreValue/index.html> .
 
@@ -1078,6 +1472,9 @@
 
 <ontology/scoreValue/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/sorcerer> sflo:hasResourcePage <ontology/sorcerer/index.html> .
 
 <ontology/sorcerer/_knop> sflo:hasResourcePage <ontology/sorcerer/_knop/index.html> .
@@ -1085,6 +1482,9 @@
 <ontology/sorcerer/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/sorcerer/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/SorcererPrimaryAbilityChoice> sflo:hasResourcePage <ontology/SorcererPrimaryAbilityChoice/index.html> .
 
@@ -1094,6 +1494,9 @@
 
 <ontology/SorcererPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/strength> sflo:hasResourcePage <ontology/strength/index.html> .
 
 <ontology/strength/_knop> sflo:hasResourcePage <ontology/strength/_knop/index.html> .
@@ -1101,6 +1504,9 @@
 <ontology/strength/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/strength/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/warlock> sflo:hasResourcePage <ontology/warlock/index.html> .
 
@@ -1110,6 +1516,9 @@
 
 <ontology/warlock/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/WarlockPrimaryAbilityChoice> sflo:hasResourcePage <ontology/WarlockPrimaryAbilityChoice/index.html> .
 
 <ontology/WarlockPrimaryAbilityChoice/_knop> sflo:hasResourcePage <ontology/WarlockPrimaryAbilityChoice/_knop/index.html> .
@@ -1117,6 +1526,9 @@
 <ontology/WarlockPrimaryAbilityChoice/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/WarlockPrimaryAbilityChoice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/wisdom> sflo:hasResourcePage <ontology/wisdom/index.html> .
 
@@ -1126,6 +1538,9 @@
 
 <ontology/wisdom/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
 <ontology/wizard> sflo:hasResourcePage <ontology/wizard/index.html> .
 
 <ontology/wizard/_knop> sflo:hasResourcePage <ontology/wizard/_knop/index.html> .
@@ -1133,6 +1548,9 @@
 <ontology/wizard/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/wizard/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
 
 <ontology/WizardPrimaryAbilityChoice> sflo:hasResourcePage <ontology/WizardPrimaryAbilityChoice/index.html> .
 

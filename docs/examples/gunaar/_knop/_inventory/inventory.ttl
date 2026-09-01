@@ -5,7 +5,6 @@
 <examples/gunaar/_knop> a sflo:Knop ;
   sflo:hasKnopMetadata <examples/gunaar/_knop/_meta> ;
   sflo:hasKnopInventory <examples/gunaar/_knop/_inventory> ;
-  sflo:hasKnopSourceRegistry <examples/gunaar/_knop/_sources> ;
   sflo:hasWorkingKnopInventoryFile <examples/gunaar/_knop/_inventory/inventory.ttl> ;
   sflo:hasPayloadArtifact <examples/gunaar> ;
   sflo:hasResourcePage <examples/gunaar/_knop/index.html> .
@@ -42,11 +41,6 @@
   sflo:hasWorkingLocatedFile <examples/gunaar/_knop/_inventory/inventory.ttl> ;
   sflo:hasResourcePage <examples/gunaar/_knop/_inventory/index.html> .
 
-<examples/gunaar/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
-  sflo:hasWorkingLocatedFile <examples/gunaar/_knop/_sources/sources.ttl> .
-
-<examples/gunaar/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
 <examples/gunaar/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <examples/gunaar/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
@@ -68,3 +62,15 @@
 <examples/gunaar/_knop/_meta/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <examples/gunaar/_knop/_inventory/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<examples/gunaar/_knop> sflo:hasKnopSourceRegistry <examples/gunaar/_knop/_sources> .
+
+<examples/gunaar/_knop/_sources> a sflo:KnopSourceRegistry .
+
+<examples/gunaar/_knop/_sources> a sflo:DigitalArtifact .
+
+<examples/gunaar/_knop/_sources> a sflo:RdfDocument .
+
+<examples/gunaar/_knop/_sources> sflo:hasWorkingLocatedFile <examples/gunaar/_knop/_sources/sources.ttl> .
+
+<examples/gunaar/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .

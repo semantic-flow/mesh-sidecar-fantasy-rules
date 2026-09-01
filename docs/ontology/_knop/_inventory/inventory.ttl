@@ -5,7 +5,6 @@
 <ontology/_knop> a sflo:Knop ;
   sflo:hasKnopMetadata <ontology/_knop/_meta> ;
   sflo:hasKnopInventory <ontology/_knop/_inventory> ;
-  sflo:hasKnopSourceRegistry <ontology/_knop/_sources> ;
   sflo:hasWorkingKnopInventoryFile <ontology/_knop/_inventory/inventory.ttl> ;
   sflo:hasPayloadArtifact <ontology> ;
   sflo:hasResourcePage <ontology/_knop/index.html> .
@@ -37,14 +36,14 @@
   sflo:locatedFileForState <ontology/_history001/_s0001/ttl/fantasy-rules-ontology.ttl> ;
   sflo:hasResourcePage <ontology/_history001/_s0001/index.html> .
 
+<ontology/_history001/_s0001/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:locatedFileForManifestation <ontology/_history001/_s0001/ttl/fantasy-rules-ontology.ttl> ;
+  sflo:hasResourcePage <ontology/_history001/_s0001/ttl/index.html> .
+
 <ontology/releases/v0.0.2> a sflo:HistoricalState ;
   sflo:hasManifestation <ontology/releases/v0.0.2/ttl> ;
   sflo:locatedFileForState <ontology/releases/v0.0.2/ttl/fantasy-rules-ontology.ttl> ;
   sflo:hasResourcePage <ontology/releases/v0.0.2/index.html> .
-
-<ontology/_history001/_s0001/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
-  sflo:locatedFileForManifestation <ontology/_history001/_s0001/ttl/fantasy-rules-ontology.ttl> ;
-  sflo:hasResourcePage <ontology/_history001/_s0001/ttl/index.html> .
 
 <ontology/releases/v0.0.2/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
   sflo:locatedFileForManifestation <ontology/releases/v0.0.2/ttl/fantasy-rules-ontology.ttl> ;
@@ -58,28 +57,13 @@
   sflo:hasWorkingLocatedFile <ontology/_knop/_inventory/inventory.ttl> ;
   sflo:hasResourcePage <ontology/_knop/_inventory/index.html> .
 
-<ontology/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
-  sflo:hasWorkingLocatedFile <ontology/_knop/_sources/sources.ttl> .
-
-<ontology/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
-
-
-
-
-
-
 <ontology/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <ontology/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
-
-
 <ontology/_history001/_s0001/ttl/fantasy-rules-ontology.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <ontology/releases/v0.0.2/ttl/fantasy-rules-ontology.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
-
 
 <ontology/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
@@ -100,3 +84,15 @@
 <ontology/_knop/_meta/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/_knop/_inventory/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<ontology/_knop> sflo:hasKnopSourceRegistry <ontology/_knop/_sources> .
+
+<ontology/_knop/_sources> a sflo:KnopSourceRegistry .
+
+<ontology/_knop/_sources> a sflo:DigitalArtifact .
+
+<ontology/_knop/_sources> a sflo:RdfDocument .
+
+<ontology/_knop/_sources> sflo:hasWorkingLocatedFile <ontology/_knop/_sources/sources.ttl> .
+
+<ontology/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .

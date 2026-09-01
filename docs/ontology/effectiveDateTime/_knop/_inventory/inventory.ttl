@@ -32,3 +32,4 @@
 <ontology/effectiveDateTime/_knop/_meta/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/effectiveDateTime/_knop/_inventory/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+

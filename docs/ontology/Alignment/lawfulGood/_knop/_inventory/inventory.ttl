@@ -32,3 +32,4 @@
 <ontology/Alignment/lawfulGood/_knop/_meta/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/Alignment/lawfulGood/_knop/_inventory/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+

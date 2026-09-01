@@ -32,3 +32,4 @@
 <ontology/ClericPrimaryAbilityChoice/_knop/_meta/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <ontology/ClericPrimaryAbilityChoice/_knop/_inventory/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+

@@ -32,3 +32,4 @@
 <examples/gunaar/ability-score/wisdom/_knop/_meta/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <examples/gunaar/ability-score/wisdom/_knop/_inventory/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
