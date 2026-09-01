@@ -1,0 +1,30 @@
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<shacl/_knop> a sflo:Knop ;
+  sflo:hasKnopMetadata <shacl/_knop/_meta> ;
+  sflo:hasKnopInventory <shacl/_knop/_inventory> ;
+  sflo:hasKnopSourceRegistry <shacl/_knop/_sources> ;
+  sflo:hasWorkingKnopInventoryFile <shacl/_knop/_inventory/inventory.ttl> ;
+  sflo:hasPayloadArtifact <shacl> .
+
+<shacl> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:workingLocalRelativePath "../shacl/fantasy-rules-shacl.ttl" .
+
+<shacl/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <shacl/_knop/_meta/meta.ttl> .
+
+<shacl/_knop/_inventory> a sflo:KnopInventory, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <shacl/_knop/_inventory/inventory.ttl> .
+
+
+<shacl/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <shacl/_knop/_sources/sources.ttl> .
+
+<shacl/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<shacl/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<shacl/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+
