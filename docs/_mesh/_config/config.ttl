@@ -7,4 +7,9 @@
     a sfcfg:MeshWorkspacePathRule ;
     sfcfg:workspacePathPrefix "../ontology/" ;
     sfcfg:appliesToLocalPathLocatorKind <https://semantic-flow.github.io/sflo/config/localPathLocatorKind_workingLocalRelativePath>
+  ] ;
+  sfcfg:hasMeshWorkspacePathRule [
+    a sfcfg:MeshWorkspacePathRule ;
+    sfcfg:workspacePathPrefix "../shacl/" ;
+    sfcfg:appliesToLocalPathLocatorKind <https://semantic-flow.github.io/sflo/config/localPathLocatorKind_workingLocalRelativePath>
   ] .
