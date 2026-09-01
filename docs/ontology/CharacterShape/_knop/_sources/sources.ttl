@@ -1,0 +1,20 @@
+@base <https://semantic-flow.github.io/mesh-sidecar-fantasy-rules/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<ontology/CharacterShape/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <ontology/CharacterShape/_knop/_sources/sources.ttl> ;
+  sflo:hasSourceBinding <ontology/CharacterShape/_knop/_sources#extraction-source> .
+
+<ontology/CharacterShape/_knop/_sources#extraction-source> a sflo:ExtractionSource ;
+  sflo:targetArtifact <shacl> ;
+  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:hasResolutionObservation <ontology/CharacterShape/_knop/_sources#extraction-source-observation-001> .
+
+<ontology/CharacterShape/_knop/_sources#extraction-source-observation-001> a sflo:ArtifactResolutionObservation ;
+  sflo:observedArtifactResolutionSpec [
+    a sflo:ArtifactResolutionSpec ;
+    sflo:targetLocalRelativePath "../shacl/fantasy-rules-shacl.ttl"
+  ] ;
+  sflo:observedContentDigest "sha256:349f1ad30fb4b2f20cc9c9e5f6febae09c6adb2148bc6b62c81905c9da9cc011" .
+
+<ontology/CharacterShape/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
